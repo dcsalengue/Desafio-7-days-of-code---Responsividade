@@ -1,0 +1,15 @@
+.header{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    height: 33px;
+    align-items: center;
+    position: relative;
+    padding: 0 1em;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
