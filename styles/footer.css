@@ -1,0 +1,44 @@
+.footer {
+    position: fixed;
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    height: 58px;
+    bottom: 0;
+    left: 0;
+    border-radius: 12px 12px 0px 0px;
+    background-color: var(--branco);
+}
+.menu__lista{
+    display: flex;
+   align-items: baseline;
+}
+
+.menu__item{
+    padding: 1em;
+
+}
+.menu_imagem  {
+    text-align: center;    
+    height: 40px;
+}
+
+.menu_imagem  figcaption{
+    margin-top: 0.5em;
+}
+
+.botao-flutuante{
+    background-image: url("../assets/Botão_flutuante.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 82px;
+    width: 56px;
+    height: 56px;
+    right: 0px;
+    margin-right: 1em;
+    border: none;
+    background-color: transparent;
+padding: 0;
+}
