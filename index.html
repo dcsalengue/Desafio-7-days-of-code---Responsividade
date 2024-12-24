@@ -12,18 +12,312 @@
 <body>
     <header class="header">
 
-        <div class="hora">
-            03:33
-        </div>
-        <div class="icones">
-            <ul class="icones">
-                <li class="icones__icone"><img src="/assets/signal_cellular_4_bar.svg" alt=""></li>
-                <li class="icones__icone"><img src="/assets/battery_full.svg" alt=""></li>
-                <li class="icones__icone"><img src="/assets/wifi.svg" alt=""></li>
 
-            </ul>
+        <div class="header__foto"></div>
+
+        <div class="header__descricao">
+            <h1 class="header__titulo">Olá, Sônia</h1>
+            <p class="header__texto">Mais 4 consultas hoje</p>
         </div>
     </header>
+
+    <section class="consultas">
+        <ul><!--  Lista de dias -->
+            <!-- hoje -->
+            <li>
+                <h2 class="consultas__data">Hoje</h2>
+                <ul class="consulta__lista">
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-2.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Luciana Dias</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">16:00 - 17:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta presencial -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+
+                            <img class="consulta__paciente__foto" src="/assets/perfil-3.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Larissa Santana</h1>
+
+                                    <div class="consulta__tipo--local">
+                                        <p class="consulta__tipo__texto">Consulta no local</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">14:00 - 15:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes botao-azul" type="button">Ver endereço</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-4.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Marcos Correia</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">17:20 - 18:00 (40 minutos)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- amanhã -->
+            <li>
+                <h2 class="consultas__data">Amanhã</h2>
+                <ul class="consulta__lista">
+
+                    <!-- Consulta presencial -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+
+                            <img class="consulta__paciente__foto" src="/assets/perfil-5.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Clara Lemos</h1>
+
+                                    <div class="consulta__tipo--local">
+                                        <p class="consulta__tipo__texto">Consulta no local</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">14:00 - 15:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes botao-azul" type="button">Ver endereço</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-2.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Luciana Dias</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">16:00 - 17:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-4.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Marcos Correia</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">17:20 - 18:00 (40 minutos)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta presencial -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+
+                            <img class="consulta__paciente__foto" src="/assets/perfil-3.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Larissa Santana</h1>
+
+                                    <div class="consulta__tipo--local">
+                                        <p class="consulta__tipo__texto">Consulta no local</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">14:00 - 15:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes botao-azul" type="button">Ver endereço</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- quarta-feira -->
+            <li>
+                <h2 class="consultas__data">Quarta-feira</h2>
+                <ul class="consulta__lista">
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-2.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Luciana Dias</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">16:00 - 17:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta presencial -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+
+                            <img class="consulta__paciente__foto" src="/assets/perfil-3.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Larissa Santana</h1>
+
+                                    <div class="consulta__tipo--local">
+                                        <p class="consulta__tipo__texto">Consulta no local</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">14:00 - 15:00 (1 hora)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes botao-azul" type="button">Ver endereço</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Consulta remota -->
+                    <li class="consulta__lista__item">
+
+                        <div class="consulta__paciente">
+                            <img class="consulta__paciente__foto" src="/assets/perfil-4.png"
+                                alt="foto de prefil do paciente">
+
+                            <div class="consulta__descricao">
+                                <h2 class="consulta__paciente__nome">Marcos Correia</h1>
+
+                                    <div class="consulta__tipo--remota">
+                                        <p class="consulta__tipo__texto">Consulta remota</p>
+                                    </div>
+
+                            </div>
+                            <div class="consulta__paciente__chat"></div>
+                        </div>
+                        <hr />
+                        <div class="consulta__acoes">
+                            <p class="consulta__acoes__horario">17:20 - 18:00 (40 minutos)</p>
+                            <div class="consulta__acoes__botoes__container">
+                                <button class="consulta__acoes__botoes" type="button">Ligar por vídeo</button>
+                                <button class="consulta__acoes__botoes" type="button">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
 
 </body>
 

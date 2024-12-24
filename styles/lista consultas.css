@@ -1,0 +1,128 @@
+.consultas {
+    padding: 1em;
+}
+
+.consultas__data {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--preto);
+    padding-bottom: 0.5em;
+}
+
+.consulta__lista__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--branco);
+    width: 92%
+}
+
+.consulta__paciente__foto {
+
+    margin-right: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+}
+
+
+.consulta__paciente {
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+
+.consulta__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.consulta__paciente__nome {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--preto);
+    display: flex;
+    flex-direction: row;
+}
+
+.consulta__tipo--remota, .consulta__tipo--local {
+    color: var(--cinza);
+    font-size: 12px;
+    background-repeat: no-repeat;
+    height: 1.5em;
+}
+
+.consulta__tipo--remota{
+    background-image: url("../assets/Camera.svg");
+    
+} .consulta__tipo--local {
+    background-image: url("../assets/pin.svg");
+
+}
+
+.consulta__tipo__texto {
+    margin-left: 2em;
+}
+
+.consulta__paciente__chat {
+    width: 2em;
+    height: 2em;
+    background-color: var(--cinza-claro);
+    background-image: url("../assets/chat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    margin-left: auto;
+}
+
+hr {
+    width: 100%;
+    border-color: var(--cinza-claro);
+    
+}
+
+
+.consulta__acoes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5em
+}
+
+.consulta__acoes__horario {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.consulta__acoes__botoes__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.consulta__acoes__botoes {
+    padding: 1em;
+    background-color: var(--laranja);
+    box-shadow: 0px 4px 16px 0px #FFB05029;
+    border: 0px;
+    border-radius: 8px;
+    color: var(--branco);
+    font-weight: 500;
+    width: 100%;
+}
+
+.botao-azul{
+    background-color: var(--azul);
+}
+
+.consulta__acoes__botoes:hover {
+   
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 1px solid #ECECEC;
+    
+}

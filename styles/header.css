@@ -1,15 +1,33 @@
-.header{
-    background-color: var(--branco);
+.header {
     display: flex;
-    justify-content: space-between;
-    height: 33px;
+    height: 100px;
     align-items: center;
     position: relative;
     padding: 0 1em;
 }
 
-.icones{
+.header__foto {
+    margin-right: 1em;
+    width: 57px;
+    height: 57px;
+    background-image: url("../assets/perfil-1.png");
+    background-size: cover;
+    border-radius: 50px;
+}
+
+
+.header__descricao{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 1em;
+}
+
+.header__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.header__descricao {
+    color: var(--cinza);
 }
