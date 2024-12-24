@@ -1,5 +1,8 @@
 .consultas {
     padding: 1em;
+    width: 360px;
+    display: flex;
+    margin: auto;
 }
 
 .consultas__data {
@@ -90,7 +93,7 @@ hr {
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 0.5em
+    gap: 0.5em;
 }
 
 .consulta__acoes__horario {

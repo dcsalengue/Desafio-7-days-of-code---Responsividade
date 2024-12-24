@@ -1,0 +1,87 @@
+.botao-flutuante-adicionar {
+    background-image: url("../assets/adicionar\ fab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 82px;
+    width: 56px;
+    height: 56px;
+    right: 0px;
+    margin-right: 2em;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.botao-flutuante-adicionar:hover {
+    display: flex;
+    background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.menu-adicional {
+    display: none;
+}
+
+.botao-flutuante-adicionar:hover>.menu-adicional {
+    display: flex;
+    position: fixed;
+    text-align: end;
+    align-items: flex-end;
+    position: absolute;
+    margin-bottom: 5em;
+    margin-right: 3em;
+    opacity: 1;
+}
+
+.menu-adicional__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    opacity: unset;
+}
+
+.menu-adicional__botao {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+}
+
+#botao-consulta-adicionar {
+    background-image: url("../assets/adicionar\ fab.svg");
+}
+
+#botao-consulta-video {
+    background-image: url("../assets/camera\ fab.svg");
+}
+
+#botao-consulta-presencial {
+    background-image: url("../assets/pin\ fab.svg");
+}
+
+.menu-adicional__descricao {
+    top: 463px;
+    left: 44px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 2323px 0px 0px 0px;
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: white;
+
+}
