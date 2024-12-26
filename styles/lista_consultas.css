@@ -1,8 +1,14 @@
 .consultas {
     padding: 1em;
-    width: 360px;
     display: flex;
     margin: auto;
+    justify-content: center;
+}
+
+
+
+.consultas>ul {
+    width: 95vw;
 }
 
 .consultas__data {
@@ -26,8 +32,8 @@
 .consulta__paciente__foto {
 
     margin-right: 1em;
-    width: 2em;
-    height: 2em;
+    width: 10%;
+    height: 10%;
     border-radius: 50px;
 }
 
@@ -42,6 +48,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    justify-content: center;
 }
 
 .consulta__paciente__nome {
@@ -52,17 +59,20 @@
     flex-direction: row;
 }
 
-.consulta__tipo--remota, .consulta__tipo--local {
+.consulta__tipo--remota,
+.consulta__tipo--local {
     color: var(--cinza);
     font-size: 12px;
     background-repeat: no-repeat;
     height: 1.5em;
 }
 
-.consulta__tipo--remota{
+.consulta__tipo--remota {
     background-image: url("../assets/Camera.svg");
-    
-} .consulta__tipo--local {
+
+}
+
+.consulta__tipo--local {
     background-image: url("../assets/pin.svg");
 
 }
@@ -85,7 +95,7 @@
 hr {
     width: 100%;
     border-color: var(--cinza-claro);
-    
+
 }
 
 
@@ -118,14 +128,44 @@ hr {
     width: 100%;
 }
 
-.botao-azul{
+.botao-azul {
     background-color: var(--azul);
 }
 
 .consulta__acoes__botoes:hover {
-   
+
     background-color: var(--branco);
     color: var(--preto);
     border: 1px solid #ECECEC;
+
+}
+
+
+@media screen and (min-width: 768px)
+{
+    .container-lista{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        gap: 1em;
+    }
+
+    .consulta__lista {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+   
+}
+
+@media screen and (min-width: 1440px)
+{
     
+    .consulta__lista {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+   
 }

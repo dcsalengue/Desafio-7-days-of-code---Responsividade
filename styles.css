@@ -16,12 +16,15 @@
     --cor-de-fundo:  linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
     --fonte-principal: "Montserrat";
 }
-
+html {
+    font-size: 100%; /* 16px */
+  }
+  
 body{
     background: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     position: relative;
 }
 
@@ -29,4 +32,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1em;
+    margin-bottom: 3em;
 }
