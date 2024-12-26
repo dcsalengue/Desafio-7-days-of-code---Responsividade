@@ -5,6 +5,7 @@
     align-self: flex-start;
     position: relative;
     padding: 0 1em;
+    grid-area: header;
 }
 
 .header__foto {
