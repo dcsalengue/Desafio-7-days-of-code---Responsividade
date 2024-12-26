@@ -141,7 +141,9 @@ hr {
     border: 1px solid #ECECEC;
 
 }
-
+.consultas>ul {
+    width: auto;
+}
 
 @media screen and (min-width: 768px)
 {
@@ -160,6 +162,7 @@ hr {
     }
 
    
+  
 }
 
 @media screen and (min-width: 1440px)
@@ -170,8 +173,5 @@ hr {
         width: auto;
     }
 
-    .consultas>ul {
-        width: auto;
-    }
     
 }
