@@ -392,38 +392,45 @@
             <form class="formulario">
                 <div class="container__campo-texto">
                     <label class="formulario__label" for="nome-do-paciente">Nome do paciente</label>
-                    <input type="text" id="nome-do-paciente" nome="nome-do-paciente" class="formulario__campo-texto"
-                        placeholder="Nome do paciente">
+                    <input type="text" id="nome-do-paciente" name="nome-do-paciente" 
+                        class="formulario__campo-texto" placeholder="Digite o nome do paciente">
                 </div>
+            
                 <div class="container__campo-texto">
-                    <label class="formulario__label">
-                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
-                            value="tipo-de-consulta-presencial" checked>Consulta
-                        presencial
+                    <span class="formulario__label">Tipo de consulta</span>
+                    <label>
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" 
+                            name="selecao-tipo-de-consulta" value="tipo-de-consulta-presencial" checked>
+                        Consulta presencial
                     </label>
-                    <label class="formulario__label">
-                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
-                            value="tipo-de-consulta-remota">Consulta remota
+                    <label>
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" 
+                            name="selecao-tipo-de-consulta" value="tipo-de-consulta-remota">
+                        Consulta remota
                     </label>
                 </div>
+            
                 <div class="container__campo-texto">
-                    <label class="formulario__label" for="nome-do-paciente">Data da consulta</label>
-                    <input type="date" class="formulario__campo-texto">
+                    <label class="formulario__label" for="data-da-consulta">Data da consulta</label>
+                    <input type="date" id="data-da-consulta" name="data-da-consulta" 
+                        class="formulario__campo-texto">
                 </div>
+            
                 <div class="container__campo-texto">
-                    <label class="formulario__label" for="nome-do-paciente">Horário da consulta</label>
-                    <input type="time" class="formulario__campo-texto">
+                    <label class="formulario__label" for="horario-da-consulta">Horário da consulta</label>
+                    <input type="time" id="horario-da-consulta" name="horario-da-consulta" 
+                        class="formulario__campo-texto">
                 </div>
-
-                
+            
                 <div class="container__campo-texto">
-                    <label class="formulario__label" for="observacoes">Observaçoes</label>
-                <textarea  class="texto-grande" value="" id="observacoes" name="observacoes" rows="8" cols="50">
-                It was a dark and stormy night...
-                </textarea>
-            </div>
+                    <label class="formulario__label" for="observacoes">Observações</label>
+                    <textarea id="observacoes" name="observacoes" class="texto-grande" rows="8" cols="50"
+                        placeholder="Insira informações adicionais sobre a consulta"></textarea>
+                </div>
+            
                 <input type="submit" class="formulario__salvar-consulta" value="Salvar consulta">
             </form>
+            
         </section>
     </div>
 </body>
