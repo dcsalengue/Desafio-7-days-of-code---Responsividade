@@ -22,7 +22,7 @@
             </div>
         </header>
 
-        <section class="consultas">
+        <main class="consultas">
             <ul><!--  Lista de dias -->
                 <!-- hoje -->
                 <li>
@@ -345,7 +345,7 @@
                 </div>
             </div>
 
-        </section>
+        </main>
 
 
 
@@ -356,7 +356,8 @@
                 <ul class="menu__lista">
                     <li class="menu__item">
                         <figure class="menu_imagem">
-                            <img class=".menu_imagem_svg" src="./assets/Calendarioicone.svg" alt="Ícone de calendário" />
+                            <img class=".menu_imagem_svg" src="./assets/Calendarioicone.svg"
+                                alt="Ícone de calendário" />
                             <figcaption>Consultas</figcaption>
                         </figure>
                     </li>
@@ -385,8 +386,45 @@
                 </ul>
             </nav>
 
-        </footer>
+        </aside>
 
+        <section class="container_formulario">
+            <form class="formulario">
+                <div class="container__campo-texto">
+                    <label class="formulario__label" for="nome-do-paciente">Nome do paciente</label>
+                    <input type="text" id="nome-do-paciente" nome="nome-do-paciente" class="formulario__campo-texto"
+                        placeholder="Nome do paciente">
+                </div>
+                <div class="container__campo-texto">
+                    <label class="formulario__label">
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
+                            value="tipo-de-consulta-presencial" checked>Consulta
+                        presencial
+                    </label>
+                    <label class="formulario__label">
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
+                            value="tipo-de-consulta-remota">Consulta remota
+                    </label>
+                </div>
+                <div class="container__campo-texto">
+                    <label class="formulario__label" for="nome-do-paciente">Data da consulta</label>
+                    <input type="date" class="formulario__campo-texto">
+                </div>
+                <div class="container__campo-texto">
+                    <label class="formulario__label" for="nome-do-paciente">Horário da consulta</label>
+                    <input type="time" class="formulario__campo-texto">
+                </div>
+
+                
+                <div class="container__campo-texto">
+                    <label class="formulario__label" for="observacoes">Observaçoes</label>
+                <textarea  class="texto-grande" value="" id="observacoes" name="observacoes" rows="8" cols="50">
+                It was a dark and stormy night...
+                </textarea>
+            </div>
+                <input type="submit" class="formulario__salvar-consulta" value="Salvar consulta">
+            </form>
+        </section>
     </div>
 </body>
 

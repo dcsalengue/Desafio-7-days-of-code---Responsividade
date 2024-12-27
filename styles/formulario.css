@@ -1,0 +1,91 @@
+.container_formulario {
+    display: none;
+    grid-area: form;
+}
+
+@media screen and (min-width: 768px) {
+    .container_formulario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 564px;
+        border-radius: 80px;
+        background: #F3F3F3;
+        border: solid 1px #e3e3e3;
+        padding: 2em;
+    }
+
+    .formulario__label {
+        color: #898989;
+    }
+
+    .formulario__campo-texto,
+    .texto-grande {
+        background-color: white;
+        border-radius: 8px;
+        border: none;
+        padding: 0 0.5em;
+    }
+
+    .formulario__campo-texto {
+        width: 238px;
+        height: 56px;
+    }
+
+    .formulario__campo-texto::placeholder {
+        color: #CFCFCF;
+    }
+
+    .formulario__campo-texto.formulario__campo-texto:focus {
+        border: solid 2px var(--azul);
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    .container__campo-texto {
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 1em;
+    }
+
+    .campo-observacoes {
+        width: 400px;
+    }
+
+    .texto-grande {}
+
+    .texto-grande:focus {
+        border: solid 2px var(--azul);
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    .formulario__salvar-consulta {
+        background-color: var(--azul);
+        color: white;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0px 4px 16px 0px #4894FF29;
+
+    }
+
+    .formulario__salvar-consulta:hover{
+        background: #4786F0;
+        cursor: pointer;
+
+    }
+}
