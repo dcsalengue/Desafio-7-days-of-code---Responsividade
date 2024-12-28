@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo opaco */
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo opaco */
     z-index: 9; /* Fica abaixo do menu */
 }
 
@@ -29,20 +29,9 @@
     transition: opacity 0.3s ease;
 }
 
-/* Exibe o botão e a sobreposição quando o botão for hover */
-.botao-flutuante-adicionar:hover {
-    background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
-    opacity: 0.6;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 11; /* O botão fica acima da overlay */
-}
 
 /* Torna a overlay visível quando o botão for hover */
-.botao-flutuante-adicionar:hover ~ .overlay {
+.menu-adicional:hover ~ .overlay {
     display: flex;
 }
 
@@ -57,14 +46,16 @@
     justify-content: flex-end;
     flex-direction: column;
     z-index: 15;  /* O menu fica acima de tudo */
-    border: solid 1px;
+    /* border: solid 1px; */
 }
 
 /* Exibe o menu adicional quando o botão ou o menu for hover */
 .botao-flutuante-adicionar:hover~.menu-adicional,
-.menu-adicional:hover {
+.menu-adicional:hover
+ {
     display: flex;
 }
+
 
 /* Itens do menu */
 .menu-adicional__item {
@@ -84,6 +75,10 @@
     height: 56px;
     border: none;
     padding: 0;
+}
+
+.menu-adicional__botao:hover{
+    transform: translate(2px, 2px); /* Move o botão para a direita e para baixo */
 }
 
 #botao-consulta-adicionar {
