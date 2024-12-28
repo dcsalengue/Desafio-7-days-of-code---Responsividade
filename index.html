@@ -327,27 +327,11 @@
                 </li>
             </ul>
 
-            <div class="botao-flutuante-adicionar">
-                <div class="menu-adicional">
-                    <ul class="menu-adicional__itens">
-                        <li class="menu-adicional__item">
-                            <span class="menu-adicional__descricao">Nova consulta na casa do paciente</span>
-                            <button id="botao-consulta-presencial" class="menu-adicional__botao"></button>
-                        </li>
-                        <li class="menu-adicional__item">
-                            <span class="menu-adicional__descricao">Nova consulta por video</span>
-                            <button id="botao-consulta-video" class="menu-adicional__botao"></button>
-                        </li>
-                        <li class="menu-adicional__item">
-                            <button id="botao-consulta-adicionar" class="menu-adicional__botao"></button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            
+
+            
 
         </main>
-
-
 
 
         <aside class="aside">
@@ -392,46 +376,63 @@
             <form class="formulario">
                 <div class="container__campo-texto">
                     <label class="formulario__label" for="nome-do-paciente">Nome do paciente</label>
-                    <input type="text" id="nome-do-paciente" name="nome-do-paciente" 
-                        class="formulario__campo-texto" placeholder="Digite o nome do paciente">
+                    <input type="text" id="nome-do-paciente" name="nome-do-paciente" class="formulario__campo-texto"
+                        placeholder="Digite o nome do paciente">
                 </div>
-            
+
                 <div class="container__campo-texto">
                     <span class="formulario__label">Tipo de consulta</span>
                     <label>
-                        <input type="radio" class="formulario__selecao-tipo-de-consulta" 
-                            name="selecao-tipo-de-consulta" value="tipo-de-consulta-presencial" checked>
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
+                            value="tipo-de-consulta-presencial" checked>
                         Consulta presencial
                     </label>
                     <label>
-                        <input type="radio" class="formulario__selecao-tipo-de-consulta" 
-                            name="selecao-tipo-de-consulta" value="tipo-de-consulta-remota">
+                        <input type="radio" class="formulario__selecao-tipo-de-consulta" name="selecao-tipo-de-consulta"
+                            value="tipo-de-consulta-remota">
                         Consulta remota
                     </label>
                 </div>
-            
+
                 <div class="container__campo-texto">
                     <label class="formulario__label" for="data-da-consulta">Data da consulta</label>
-                    <input type="date" id="data-da-consulta" name="data-da-consulta" 
-                        class="formulario__campo-texto">
+                    <input type="date" id="data-da-consulta" name="data-da-consulta" class="formulario__campo-texto">
                 </div>
-            
+
                 <div class="container__campo-texto">
                     <label class="formulario__label" for="horario-da-consulta">Horário da consulta</label>
-                    <input type="time" id="horario-da-consulta" name="horario-da-consulta" 
+                    <input type="time" id="horario-da-consulta" name="horario-da-consulta"
                         class="formulario__campo-texto">
                 </div>
-            
+
                 <div class="container__campo-texto">
                     <label class="formulario__label" for="observacoes">Observações</label>
                     <textarea id="observacoes" name="observacoes" class="texto-grande" rows="8" cols="50"
                         placeholder="Insira informações adicionais sobre a consulta"></textarea>
                 </div>
-            
+
                 <input type="submit" class="formulario__salvar-consulta" value="Salvar consulta">
             </form>
-            
+
         </section>
+    </div>
+    <div class="overlay"></div> <!-- Novo elemento para o fundo opaco -->
+    <div class="botao-flutuante-adicionar"></div>
+
+    <div class="menu-adicional">
+        <ul class="menu-adicional__itens">
+            <li class="menu-adicional__item">
+                <span class="menu-adicional__descricao">Nova consulta na casa do paciente</span>
+                <button id="botao-consulta-presencial" class="menu-adicional__botao"></button>
+            </li>
+            <li class="menu-adicional__item">
+                <span class="menu-adicional__descricao">Nova consulta por video</span>
+                <button id="botao-consulta-video" class="menu-adicional__botao"></button>
+            </li>
+            <li class="menu-adicional__item">
+                <button id="botao-consulta-adicionar" class="menu-adicional__botao"></button>
+            </li>
+        </ul>
     </div>
 </body>
 

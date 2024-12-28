@@ -64,7 +64,6 @@
         width: 400px;
     }
 
-    .texto-grande {}
 
     .texto-grande:focus {
         border: solid 2px var(--azul);
