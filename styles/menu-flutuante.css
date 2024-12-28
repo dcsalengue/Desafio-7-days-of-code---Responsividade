@@ -57,6 +57,7 @@
     justify-content: flex-end;
     flex-direction: column;
     z-index: 15;  /* O menu fica acima de tudo */
+    border: solid 1px;
 }
 
 /* Exibe o menu adicional quando o botão ou o menu for hover */
